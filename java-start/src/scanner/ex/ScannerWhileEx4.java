@@ -10,7 +10,7 @@ public class ScannerWhileEx4 {
         String name;
         int price;
         int quantity;
-        int totalPrice = 0;
+        int totalSum = 0;
 
 
         while (true) {
@@ -29,11 +29,11 @@ public class ScannerWhileEx4 {
                 System.out.print("구매 수량을 입력하세요 : ");
                 quantity = scanner.nextInt();
 
-                totalPrice += price * quantity;
+                totalSum += price * quantity;
                 System.out.println("상품명 : " + name + " 가격 : " + price + " 수량 : " + quantity + " 합계 : " + price * quantity);
             } else if (option == 2) {
-                System.out.println("총 비용 : " + totalPrice);
-                totalPrice = 0;
+                System.out.println("총 비용 : " + totalSum);
+                totalSum = 0;
             } else if (option == 3) {
                 System.out.println("프로그램을 종료합니다!");
                 break;
