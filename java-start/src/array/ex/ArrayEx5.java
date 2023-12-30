@@ -13,12 +13,12 @@ public class ArrayEx5 {
         double avg;
 
         System.out.println(count + "개의 정수를 입력하세요 :");
-        for (int i = 0; i < arr.length; i++) {
+        for (int i = 0; i < count; i++) {
             arr[i] = scanner.nextInt();
             sum += arr[i];
         }
 
-        avg = (double) sum / arr.length;
+        avg = (double) sum / count;
         System.out.println("입력한 정수의 합계 : " + sum);
         System.out.println("입력한 정수의 평균 : " + avg);
     }
